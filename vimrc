@@ -1,6 +1,12 @@
 " pathogen initialization
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 set number
+syntax on
+filetype plugin indent on
 
+
+" SHORTCUTS
+
+" Give a shortcut to NERD Tree
+map <F2> :NERDTreeToggle<CR>
